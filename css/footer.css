@@ -1,0 +1,9 @@
+.footer{
+	background-color: rgb(64,64,64);
+}
+.footer .content{
+	text-indent: 1em;
+	line-height: 46px;
+	font-size:14px;
+	color:#6e6e6e;
+}

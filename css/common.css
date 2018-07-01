@@ -1,0 +1,85 @@
+/*主题内容宽度*/
+.content{
+	width:1280px;
+	margin:0 auto;
+}
+/*用于子元素浮动时*/
+.clearfix:after{   
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+/* 小蓝框tips*/
+.logo_small{   
+	opacity: 0;
+	position: absolute; 
+	top:220px;
+	float: left;
+	width:100px;
+	height:100px;
+	background-color: #008BD5;
+	text-align: center;
+}
+.logo_small>p{
+	width:100px;
+	color:#fff;
+}
+.logo_small>.pfisrt{
+	display: inline-block;
+	margin-top:20px;
+}
+/*小圆点索引*/
+.index_list{  
+	font-size: 0;
+	position: absolute;
+	width:100px;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -29px;
+}
+.index_list>li{
+	font-size: initial;
+	display: inline-block;
+	margin:0 4px;
+	width:6px;
+	height:6px;
+	border-radius: 50%;
+	border: 1px solid #383838;
+}
+.index_list>li:hover{
+	cursor: pointer;
+}
+.active{
+	color:#fff;
+	background-color: #008BD5;
+	transition: background linear 0.3s;
+}
+.hover{
+	display: block;
+	height:100%
+	background-color: #008BD5;
+	transition: background linear 0.3s;
+}
+/*动画标识*/
+.run{
+	position: relative;
+	opacity: 0;
+	top:300px;
+}
+/*案例图片效果*/
+.news .img_info{
+	position: absolute;
+	top:100%;
+	left:0;
+	padding: 10px;
+	opacity: 0;
+	width:100%;
+	height:100%;
+	background-color: rgba(17,137,200,.9);
+	font-size: 14px;
+	line-height: 2;
+	color:#fff;
+	box-sizing: border-box;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />    
+	<title></title>
+	<style>		
+		/* jQuery动态渐变按钮 */
+		.header {
+			display:block;
+			width:200px;
+			height:80px;
+			background:black;
+			
+		}	
+		.header span.hover{
+			display: block;
+			width:200px;
+			height:80px;
+			background:red;
+
+		}	
+	</style>
+	<script type="text/javascript" src="../lib/jQuery/jquery.min.js" ></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.header').wrapInner('<span class="hover"></span>')
+													.each(function () {
+				$('span.hover').css('opacity', 0).hover(function () {
+					$(this).stop().fadeTo(650, 1);
+				}, function () {
+					$(this).stop().fadeTo(650, 0);
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+			<a href="#" class="header">按钮</a>
+           
+</body>
+</html>
